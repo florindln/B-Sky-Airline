@@ -1,0 +1,7 @@
+Vid1- User story 1
+Vid2- User stories 3,4,5,6,6.1 All the that i've shown multiple times before are not included such as searching by different criterias and sorting
+Vid3- User stories 2,2.1
+Vid4- User story 9
+
+This covers all user stories besides 7 and 8 which are the low priority ones with niche additions 
+The functionality in the other user stories is subject to change because of software updates and code improvements

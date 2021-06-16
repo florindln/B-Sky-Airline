@@ -1,0 +1,25 @@
+stages:
+- build
+- test 
+- sonarQube
+
+build:
+ stage: build
+ script:
+  - cd airline
+  - ./gradlew build -x test
+ 
+test:
+  stage: test
+  script:
+    - cd airline
+    - ./gradlew test
+
+sonarQube:
+  stage: sonarQube
+  script:
+    - cd airline
+    - ./gradlew sonarQube
+
+after_script:
+  - exit

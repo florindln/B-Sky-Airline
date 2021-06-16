@@ -1,0 +1,52 @@
+.login{
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+  
+.specialColorText p {
+    color: green;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size:20px;
+    cursor: pointer;
+  }
+  
+  .specialColorText p:hover {
+    color: firebrick;
+    transition: 0.3s ease-out;
+  }
+.textFormat{
+   margin-top: 10px;
+}
+.signInInput{
+    height: 35px;
+    width: 85%;
+    margin:5px;
+    background-color:rgb(255, 251, 246);
+    border-radius: 5px;
+    border:1px solid gray;
+}
+
+.signButton{
+    margin-top: 20px;
+    width: 50%;
+}
+.specialDate{
+    width: 85%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: rgb(255, 251, 246);
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
