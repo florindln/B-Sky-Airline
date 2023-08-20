@@ -16,6 +16,7 @@ class Airplanes extends Component {
   }
   componentDidMount() {
     AirplaneService.getAllPlanes().then((response) => {
+      console.log(response.data);
       this.setState({ airplanes: response.data });
     });
   }

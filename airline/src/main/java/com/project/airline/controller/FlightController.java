@@ -13,7 +13,7 @@ import java.sql.Date;
 import java.sql.Time;
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/flight")
 public class FlightController {

@@ -1,21 +1,24 @@
 import axios from 'axios';
 
-const airplanes_url="http://localhost:8080/airplane";
+const base_url=process.env.REACT_APP_DEPLOYMENT_HOST;
 
-// Add a request interceptor
-axios.interceptors.request.use( config => {
-    const user = JSON.parse(localStorage.getItem('user'));
+const airplanes_url=base_url+"/airplane";
+
+// // Add a request interceptor
+// axios.interceptors.request.use( config => {
+//     const user = JSON.parse(localStorage.getItem('user'));
   
-    if(user && user.Authorization){
-      const token = user.Authorization;
-      config.headers.Authorization =  token;
-    }
+//     if(user && user.Authorization){
+//       const token = user.Authorization;
+//       config.headers.Authorization =  token;
+//     }
   
-    return config;
-  });
+//     return config;
+//   });
 
 class AirplaneService{
     getAllPlanes(){
+        console.log("query "+airplanes_url);
         return axios.get(airplanes_url);
     }
     createPlane(airplane){
